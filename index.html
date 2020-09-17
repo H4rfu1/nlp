@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Tensorflow.js: Sentiment Analysis Demo</title>
+    <!-- Loading in TensorFlow.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
+
+    <link href="styles/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pontano Sans' rel='stylesheet'>
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+
+    <!-- Add a <div> tag with the "main" class -->
+
+    <div class="container">
+    <div class = "demo">
+      <div id="loaderlabel"<h2>Loading Model...</h2></div>
+      <div id="loader"> </div>
+      <div style="display:none;" id="mainAPP">
+      <label for="input">How was your dinner? </label><br><br>
+      <input placeholder="Try: 'The salad is fresh and delicious" id="input">
+      <button class="button" style="vertical-align:middle"><span>Post Review </span></button>
+      <p></p>
+     </div>
+    </div>
+
+    </div>
+      <script src="predict.js"></script>
+  </body>
+</html>
